@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Booking Confirmed — Nichi's Guesthouses</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --cream:      #FDFBF7;
+    --cream-2:    #F5EFE3;
+    --ink:        #2C2A28;
+    --ink-soft:   #5C5854;
+    --mocha:      #7A644D;
+    --mocha-dark: #63503D;
+    --border:     #E4DBC9;
+    --shadow:     0 30px 60px -30px rgba(44,42,40,0.28);
+  }
+  *,*::before,*::after{ box-sizing:border-box; }
+  body{
+    margin:0; min-height:100svh;
+    background:var(--cream-2); color:var(--ink);
+    font-family:'Karla', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    display:flex; align-items:center; justify-content:center; padding:24px;
+  }
+  .card{
+    max-width:480px; width:100%; background:var(--cream);
+    border-radius:20px; box-shadow:var(--shadow); padding:44px 36px;
+    text-align:center;
+  }
+  .check{
+    width:56px; height:56px; margin:0 auto 20px; border-radius:50%;
+    background:var(--mocha); display:flex; align-items:center; justify-content:center;
+  }
+  .check svg{ width:28px; height:28px; stroke:var(--cream); }
+  h1{
+    font-family:'Cormorant Garamond', Georgia, serif; font-weight:700;
+    font-size:30px; margin:0 0 12px;
+  }
+  p{ color:var(--ink-soft); font-size:15.5px; line-height:1.7; margin:0 0 8px; }
+  .actions{ margin-top:28px; display:flex; flex-direction:column; gap:12px; }
+  .btn{
+    display:inline-flex; align-items:center; justify-content:center; gap:8px;
+    padding:14px 24px; border-radius:999px; font-size:14.5px; font-weight:700;
+    text-decoration:none; border:1px solid transparent;
+  }
+  .btn-solid{ background:var(--mocha); color:var(--cream); }
+  .btn-solid:hover{ background:var(--mocha-dark); }
+  .btn-outline{ background:transparent; color:var(--ink); border-color:var(--mocha); }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="check">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+    </div>
+    <h1>Payment received</h1>
+    <p>Thank you for booking with Nichi's Guesthouses. Your payment has gone through and your stay is confirmed.</p>
+    <p>A confirmation will follow by email shortly. If you have any questions in the meantime, feel free to reach out.</p>
+    <div class="actions">
+      <a href="index.html" class="btn btn-solid">Return to Nichi's Guesthouses</a>
+      <a href="https://wa.me/265982072700?text=Hello%20Nichi%27s%20Guesthouses%2C%20I%20just%20completed%20a%20booking%20payment%20and%20have%20a%20question." class="btn btn-outline" target="_blank" rel="noopener">Contact us on WhatsApp</a>
+    </div>
+  </div>
+</body>
+</html>
